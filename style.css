@@ -969,7 +969,7 @@ button { font-family: inherit; }
   .burger { display: flex; }
 
   .section {
-    padding: 100px 20px;
+    padding: 60px 20px;
   }
 
   .hero__visual {
@@ -1052,6 +1052,10 @@ button { font-family: inherit; }
 }
 
 @media (max-width: 480px) {
+  .section {
+    padding: 40px 16px;
+  }
+
   .about__stats {
     flex-wrap: wrap;
     gap: 1.5rem;
