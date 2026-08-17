@@ -338,7 +338,6 @@ button { font-family: inherit; }
   display: block;
   font-size: clamp(4.5rem, 10vw, 9rem);
   color: var(--text);
-  overflow: hidden;
 }
 
 .hero__title-line--indent {
