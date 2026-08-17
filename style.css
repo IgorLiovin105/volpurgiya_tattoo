@@ -487,7 +487,7 @@ button { font-family: inherit; }
   font-size: clamp(2.2rem, 4vw, 3.5rem);
   font-weight: 300;
   line-height: 1.15;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .about__title em {
@@ -557,7 +557,6 @@ button { font-family: inherit; }
   justify-content: space-between;
   margin-bottom: 3rem;
   flex-wrap: wrap;
-  gap: 1.5rem;
 }
 
 .portfolio__title {
@@ -879,7 +878,6 @@ button { font-family: inherit; }
 .booking__grid {
   display: grid;
   grid-template-columns: 0.8fr 1fr;
-  gap: 80px;
   align-items: start;
 }
 
@@ -888,7 +886,7 @@ button { font-family: inherit; }
   font-size: clamp(2.2rem, 4vw, 3.5rem);
   font-weight: 300;
   line-height: 1.15;
-  margin-bottom: 0;
+  margin-bottom: 4rem;
 }
 
 .booking__title em {
@@ -921,12 +919,14 @@ button { font-family: inherit; }
   border: 1px solid var(--border);
   border-radius: 4px;
   background: var(--bg-card);
-  transition: border-color 0.4s var(--ease), background 0.4s var(--ease);
+  transition: border-color 0.5s var(--ease), background 0.5s var(--ease), transform 0.5s var(--ease), box-shadow 0.5s var(--ease);
 }
 
-.booking__case:hover {
+.booking__case[data-reveal].visible:hover {
   border-color: var(--border-hover);
   background: var(--bg-card-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(42,31,20,0.08);
 }
 
 .booking__case-icon {
@@ -937,6 +937,11 @@ button { font-family: inherit; }
   align-items: center;
   justify-content: center;
   color: var(--accent);
+  transition: transform 0.5s var(--ease);
+}
+
+.booking__case[data-reveal].visible:hover .booking__case-icon {
+  transform: scale(1.1);
 }
 
 .booking__case-body {
@@ -999,7 +1004,7 @@ button { font-family: inherit; }
   font-size: clamp(2.2rem, 4vw, 3.5rem);
   font-weight: 300;
   line-height: 1.15;
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .contact__desc {
@@ -1279,12 +1284,20 @@ button { font-family: inherit; }
 
   .booking__grid {
     grid-template-columns: 1fr;
-    gap: 3rem;
   }
 
   .contact__grid {
     grid-template-columns: 1fr;
     gap: 3rem;
+  }
+
+  .about__title,
+  .portfolio__title,
+  .services__title,
+  .process__title,
+  .booking__title,
+  .contact__title {
+    margin-bottom: 2.5rem;
   }
 
   .form__row {
