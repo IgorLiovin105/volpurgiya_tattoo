@@ -126,10 +126,10 @@ function updateParallax() {
   // Nav
   if (scrollY > 100) {
     nav.style.padding = '16px 40px';
-    nav.style.background = 'rgba(28,28,30,0.85)';
+    nav.style.background = 'rgba(240,230,208,0.92)';
   } else {
     nav.style.padding = '24px 40px';
-    nav.style.background = 'rgba(28,28,30,0.6)';
+    nav.style.background = 'rgba(240,230,208,0.7)';
   }
 
   // Hero
@@ -218,3 +218,31 @@ window.addEventListener('load', () => {
     setTimeout(() => preloader.classList.add('done'), 1000);
   }
 });
+
+// ====== GOLD PARTICLES ======
+(function initGoldParticles() {
+  const container = document.getElementById('goldParticles');
+  if (!container) return;
+  const count = 18;
+  for (let i = 0; i < count; i++) {
+    const p = document.createElement('div');
+    p.className = 'gold-particle';
+    const size = 1.5 + Math.random() * 3;
+    const left = Math.random() * 100;
+    const duration = 12 + Math.random() * 14;
+    const delay = Math.random() * duration;
+    const drift = (Math.random() - 0.5) * 80;
+    const opacity = 0.15 + Math.random() * 0.25;
+    p.style.cssText = `
+      width: ${size}px;
+      height: ${size}px;
+      left: ${left}%;
+      bottom: -20px;
+      animation-duration: ${duration}s;
+      animation-delay: -${delay}s;
+      --p-drift: ${drift}px;
+      --p-opacity: ${opacity};
+    `;
+    container.appendChild(p);
+  }
+})();
