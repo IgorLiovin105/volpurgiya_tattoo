@@ -218,36 +218,3 @@ window.addEventListener('load', () => {
     setTimeout(() => preloader.classList.add('done'), 1000);
   }
 });
-
-// ====== BG DECOR ======
-(function initBgDecor() {
-  const container = document.getElementById('bgDecor');
-  if (!container) return;
-  const total = 44;
-  const count = 20;
-  const used = new Set();
-  while (used.size < count) used.add(Math.floor(Math.random() * total) + 1);
-  used.forEach(n => {
-    const img = document.createElement('img');
-    img.className = 'bg-decor__img';
-    img.src = 'img/bg/' + n + '.png';
-    img.alt = '';
-    const size = 4 + Math.random() * 6;
-    const top = Math.random() * 90;
-    const left = Math.random() * 90;
-    const dur = 16 + Math.random() * 14;
-    const dx = (Math.random() - 0.5) * 80;
-    const dy = (Math.random() - 0.5) * 60;
-    const rot = (Math.random() - 0.5) * 8;
-    img.style.cssText = `
-      width: ${size}vw;
-      top: ${top}%;
-      left: ${left}%;
-      animation-duration: ${dur}s;
-      --dx: ${dx}px;
-      --dy: ${dy}px;
-      --rot: ${rot}deg;
-    `;
-    container.appendChild(img);
-  });
-})();

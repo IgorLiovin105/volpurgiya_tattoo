@@ -14,16 +14,9 @@
 </head>
 
 <body>
-
-
-  <!-- DECORATIVE BG -->
-  <div class="bg-decor" id="bgDecor" aria-hidden="true"></div>
-
-  <!-- PRELOADER -->
   <div class="preloader" id="preloader">
     <div class="preloader__inner">
       <svg class="preloader__svg" viewBox="0 0 200 200" fill="none">
-        <!-- Ink drops scattered -->
         <circle cx="40" cy="45" r="3" fill="#2a1f14" opacity="0" class="preloader__ink preloader__ink--1" />
         <circle cx="160" cy="55" r="2" fill="#2a1f14" opacity="0" class="preloader__ink preloader__ink--2" />
         <circle cx="55" cy="155" r="2.5" fill="#2a1f14" opacity="0" class="preloader__ink preloader__ink--3" />
@@ -31,22 +24,18 @@
         <circle cx="100" cy="30" r="1.5" fill="#2a1f14" opacity="0" class="preloader__ink preloader__ink--5" />
         <circle cx="30" cy="100" r="2" fill="#2a1f14" opacity="0" class="preloader__ink preloader__ink--6" />
 
-        <!-- Mandala outer ring -->
         <circle cx="100" cy="100" r="70" stroke="#2a1f14" stroke-width="0.5" opacity="0.2" />
         <circle cx="100" cy="100" r="70" stroke="#2a1f14" stroke-width="0.7" stroke-dasharray="440"
           stroke-dashoffset="440" class="preloader__mandala preloader__mandala--1" />
 
-        <!-- Mandala middle ring -->
         <circle cx="100" cy="100" r="50" stroke="#2a1f14" stroke-width="0.4" opacity="0.15" />
         <circle cx="100" cy="100" r="50" stroke="#2a1f14" stroke-width="0.6" stroke-dasharray="314"
           stroke-dashoffset="314" class="preloader__mandala preloader__mandala--2" />
 
-        <!-- Mandala inner ring -->
         <circle cx="100" cy="100" r="30" stroke="#2a1f14" stroke-width="0.3" opacity="0.1" />
         <circle cx="100" cy="100" r="30" stroke="#2a1f14" stroke-dasharray="188" stroke-dashoffset="188"
           class="preloader__mandala preloader__mandala--3" />
 
-        <!-- Mandala petals (8 lines radiating from center) -->
         <g class="preloader__petals">
           <line x1="100" y1="100" x2="100" y2="30" stroke="#2a1f14" stroke-width="0.5" stroke-dasharray="70"
             stroke-dashoffset="70" class="preloader__petal" />
@@ -66,10 +55,8 @@
             stroke-dashoffset="70" class="preloader__petal" />
         </g>
 
-        <!-- Center dot -->
         <circle cx="100" cy="100" r="3" fill="#2a1f14" opacity="0" class="preloader__center" />
 
-        <!-- Tattoo needle -->
         <g class="preloader__needle-group">
           <line x1="100" y1="0" x2="100" y2="22" stroke="#5a4a38" stroke-width="1.5" stroke-linecap="round" />
           <line x1="100" y1="22" x2="100" y2="32" stroke="#2a1f14" stroke-width="0.8" stroke-linecap="round" />
@@ -81,10 +68,8 @@
     </div>
   </div>
 
-  <!-- GRAIN OVERLAY -->
   <div class="grain"></div>
 
-  <!-- NAV -->
   <nav class="nav" id="nav">
     <a href="#" class="nav__logo">
       <span class="nav__logo-mark">V</span>
@@ -102,7 +87,6 @@
     </button>
   </nav>
 
-  <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
     <div class="mobile-menu__inner">
       <a href="#about" class="mobile-menu__link">Обо мне</a>
@@ -113,8 +97,9 @@
     </div>
   </div>
 
-  <!-- HERO -->
   <section class="hero" id="hero">
+    <img class="section-decor section-decor--sm section-decor--hero-1" src="img/bg/1.png" alt="" aria-hidden="true">
+    <img class="section-decor section-decor--sm section-decor--hero-2" src="img/bg/2.png" alt="" aria-hidden="true">
     <div class="hero__visual">
       <img class="hero__img" src="img/hero.jpg" alt="Volpurgiya">
     </div>
@@ -133,14 +118,11 @@
     <div class="hero__side-text">
       <span>Tattoo &amp; Art Studio</span>
     </div>
-
-    <div class="hero__scroll">
-      <div class="hero__scroll-line"></div>
-    </div>
   </section>
 
-  <!-- ABOUT -->
   <section id="about" class="about section">
+    <img class="section-decor section-decor--about-1" src="img/bg/3.png" alt="" aria-hidden="true">
+    <img class="section-decor section-decor--about-2" src="img/bg/4.png" alt="" aria-hidden="true">
     <div class="about__top">
       <span class="label">Обо мне</span>
     </div>
@@ -151,8 +133,10 @@
       <div class="about__content">
         <h2 class="about__title" data-reveal>Привет, это<br><em>Вольпургия</em></h2>
         <div class="about__text" data-reveal>
-          <p>Меня зовут Марта, я тату мастер с опытом более 5 лет <br>Я Специализируюсь на татуировках в стиле средневековой гравюры<br>Создаю эскизы обитателей бестиария, будто вот вот сошедших со страниц книги .</p>
-          <p>Тонкие линии, выполненные с ювелирной точностью, и вниманием к каждой детали, на всех этапах создания татуировки</p>
+          <p>Меня зовут Марта, я тату мастер с опытом более 5 лет <br>Я Специализируюсь на татуировках в стиле
+            средневековой гравюры<br>Создаю эскизы обитателей бестиария, будто вот вот сошедших со страниц книги .</p>
+          <p>Тонкие линии, выполненные с ювелирной точностью, и вниманием к каждой детали, на всех этапах создания
+            татуировки</p>
         </div>
         <div class="about__stats" data-reveal>
           <div class="about__stat">
@@ -172,7 +156,6 @@
     </div>
   </section>
 
-  <!-- DIVIDER -->
   <div class="ornament-divider">
     <svg viewBox="0 0 400 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <line x1="0" y1="10" x2="170" y2="10" stroke="var(--accent-dim)" stroke-width="0.5" opacity="0.3" />
@@ -183,24 +166,17 @@
     </svg>
   </div>
 
-  <!-- PORTFOLIO -->
   <section id="portfolio" class="portfolio section">
+    <img class="section-decor section-decor--portfolio-1" src="img/bg/5.png" alt="" aria-hidden="true">
+    <img class="section-decor section-decor--portfolio-2" src="img/bg/6.png" alt="" aria-hidden="true">
     <div class="portfolio__header">
       <div>
         <span class="label">Портфолио</span>
         <h2 class="portfolio__title" data-reveal>Избранные<br><em>работы</em></h2>
       </div>
-      <div class="portfolio__filters">
-        <button class="filter-btn active" data-filter="all">Все</button>
-        <button class="filter-btn" data-filter="botanical">Ботаника</button>
-        <button class="filter-btn" data-filter="fauna">Фауна</button>
-        <button class="filter-btn" data-filter="celestial">Небесное</button>
-        <button class="filter-btn" data-filter="symbolic">Символика</button>
-      </div>
     </div>
 
     <div class="portfolio__grid">
-      <!-- 1: Fern -->
       <div class="portfolio__item" data-cat="botanical" data-reveal>
         <div class="portfolio__page">
           <img class="portfolio__art" src="img/works-1.jpg" alt="Работа 1">
@@ -209,7 +185,6 @@
         </div>
       </div>
 
-      <!-- 2: Moon phases -->
       <div class="portfolio__item" data-cat="celestial" data-reveal>
         <div class="portfolio__page">
           <img class="portfolio__art" src="img/works-2.jpg" alt="Работа 2">
@@ -218,7 +193,6 @@
         </div>
       </div>
 
-      <!-- 3: Ornamental mandala -->
       <div class="portfolio__item" data-cat="symbolic" data-reveal>
         <div class="portfolio__page">
           <img class="portfolio__art" src="img/works-3.jpg" alt="Работа 3">
@@ -227,7 +201,6 @@
         </div>
       </div>
 
-      <!-- 4: Snake -->
       <div class="portfolio__item" data-cat="fauna" data-reveal>
         <div class="portfolio__page">
           <img class="portfolio__art" src="img/works-4.jpg" alt="Работа 4">
@@ -236,7 +209,6 @@
         </div>
       </div>
 
-      <!-- 5: Mountains -->
       <div class="portfolio__item" data-cat="symbolic" data-reveal>
         <div class="portfolio__page">
           <img class="portfolio__art" src="img/works-5.jpg" alt="Работа 5">
@@ -245,7 +217,6 @@
         </div>
       </div>
 
-      <!-- 6: Wildflowers -->
       <div class="portfolio__item" data-cat="botanical" data-reveal>
         <div class="portfolio__page">
           <img class="portfolio__art" src="img/works-6.jpg" alt="Работа 6">
@@ -254,7 +225,6 @@
         </div>
       </div>
 
-      <!-- 7: Geometric eye -->
       <div class="portfolio__item" data-cat="symbolic" data-reveal>
         <div class="portfolio__page">
           <img class="portfolio__art" src="img/works-7.jpg" alt="Работа 7">
@@ -263,7 +233,6 @@
         </div>
       </div>
 
-      <!-- 8 -->
       <div class="portfolio__item" data-cat="botanical" data-reveal>
         <div class="portfolio__page">
           <img class="portfolio__art" src="img/works-8.jpg" alt="Работа 8">
@@ -274,7 +243,6 @@
     </div>
   </section>
 
-  <!-- DIVIDER -->
   <div class="ornament-divider">
     <svg viewBox="0 0 400 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <line x1="0" y1="10" x2="170" y2="10" stroke="var(--accent-dim)" stroke-width="0.5" opacity="0.3" />
@@ -285,8 +253,9 @@
     </svg>
   </div>
 
-  <!-- SERVICES -->
   <section id="services" class="services section">
+    <img class="section-decor section-decor--services-1" src="img/bg/7.png" alt="" aria-hidden="true">
+    <img class="section-decor section-decor--services-2" src="img/bg/8.png" alt="" aria-hidden="true">
     <div class="services__header">
       <span class="label">Услуги</span>
       <h2 class="services__title" data-reveal>Что я<br><em>предлагаю</em></h2>
@@ -340,7 +309,6 @@
     </div>
   </section>
 
-  <!-- DIVIDER -->
   <div class="ornament-divider">
     <svg viewBox="0 0 400 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <line x1="0" y1="10" x2="170" y2="10" stroke="var(--accent-dim)" stroke-width="0.5" opacity="0.3" />
@@ -351,8 +319,9 @@
     </svg>
   </div>
 
-  <!-- PROCESS -->
   <section class="process section">
+    <img class="section-decor section-decor--process-1" src="img/bg/9.png" alt="" aria-hidden="true">
+    <img class="section-decor section-decor--process-2" src="img/bg/10.png" alt="" aria-hidden="true">
     <div class="process__header">
       <span class="label">Процесс</span>
       <h2 class="process__title" data-reveal>Как проходит<br><em>работа</em></h2>
@@ -381,7 +350,6 @@
     </div>
   </section>
 
-  <!-- DIVIDER -->
   <div class="ornament-divider">
     <svg viewBox="0 0 400 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <line x1="0" y1="10" x2="170" y2="10" stroke="var(--accent-dim)" stroke-width="0.5" opacity="0.3" />
@@ -392,8 +360,9 @@
     </svg>
   </div>
 
-  <!-- BOOKING -->
   <section id="booking" class="booking section">
+    <img class="section-decor section-decor--xl section-decor--booking-1" src="img/bg/11.png" alt="" aria-hidden="true">
+    <img class="section-decor section-decor--xl section-decor--booking-2" src="img/bg/12.png" alt="" aria-hidden="true">
     <div class="booking__grid">
       <div class="booking__left">
         <span class="label">Запись</span>
@@ -450,7 +419,6 @@
     </div>
   </section>
 
-  <!-- DIVIDER -->
   <div class="ornament-divider">
     <svg viewBox="0 0 400 20" fill="none" xmlns="http://www.w3.org/2000/svg">
       <line x1="0" y1="10" x2="170" y2="10" stroke="var(--accent-dim)" stroke-width="0.5" opacity="0.3" />
@@ -461,8 +429,9 @@
     </svg>
   </div>
 
-  <!-- CONTACT -->
   <section id="contact" class="contact section">
+    <img class="section-decor section-decor--contact-1" src="img/bg/13.png" alt="" aria-hidden="true">
+    <img class="section-decor section-decor--contact-2" src="img/bg/14.png" alt="" aria-hidden="true">
     <div class="contact__grid">
       <div class="contact__left">
         <span class="label">Контакты</span>
@@ -532,7 +501,6 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="footer__inner">
       <div class="footer__left">
