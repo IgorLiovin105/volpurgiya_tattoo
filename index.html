@@ -15,8 +15,9 @@
 
 <body>
 
-  <!-- GOLD PARTICLES -->
-  <div class="gold-particles" id="goldParticles" aria-hidden="true"></div>
+
+  <!-- DECORATIVE BG -->
+  <div class="bg-decor" id="bgDecor" aria-hidden="true"></div>
 
   <!-- PRELOADER -->
   <div class="preloader" id="preloader">
@@ -115,54 +116,7 @@
   <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero__visual">
-      <!-- Abstract face illustration -->
-      <svg class="hero__svg" viewBox="0 0 800 1000" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient id="faceGlow" cx="50%" cy="35%" r="45%">
-            <stop offset="0%" stop-color="#2a1f14" stop-opacity="0.08" />
-            <stop offset="100%" stop-color="transparent" />
-          </radialGradient>
-          <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stop-color="#2a1f14" stop-opacity="0.6" />
-            <stop offset="50%" stop-color="#2a1f14" stop-opacity="0.2" />
-            <stop offset="100%" stop-color="#2a1f14" stop-opacity="0" />
-          </linearGradient>
-        </defs>
-        <!-- Glow -->
-        <ellipse cx="400" cy="350" rx="280" ry="350" fill="url(#faceGlow)" />
-        <!-- Contour lines - abstract face -->
-        <path
-          d="M400,120 C520,120 580,200 580,300 C580,380 540,440 520,480 C500,520 480,560 480,620 C480,680 440,720 400,720 C360,720 320,680 320,620 C320,560 300,520 280,480 C260,440 220,380 220,300 C220,200 280,120 400,120Z"
-          fill="none" stroke="#2a1f14" stroke-width="0.9" opacity="0.65" class="hero-line" />
-        <path
-          d="M400,160 C500,160 540,220 540,300 C540,360 510,410 495,445 C480,480 465,520 465,570 C465,620 435,650 400,650 C365,650 335,620 335,570 C335,520 320,480 305,445 C290,410 260,360 260,300 C260,220 300,160 400,160Z"
-          fill="none" stroke="#2a1f14" stroke-width="0.6" opacity="0.45" class="hero-line" />
-        <!-- Eyes -->
-        <ellipse cx="340" cy="310" rx="35" ry="14" fill="none" stroke="#2a1f14" stroke-width="0.7" opacity="0.6"
-          class="hero-line" />
-        <ellipse cx="460" cy="310" rx="35" ry="14" fill="none" stroke="#2a1f14" stroke-width="0.7" opacity="0.6"
-          class="hero-line" />
-        <circle cx="340" cy="310" r="4" fill="#2a1f14" opacity="0.35" />
-        <circle cx="460" cy="310" r="4" fill="#2a1f14" opacity="0.35" />
-        <!-- Nose -->
-        <path d="M400,330 L395,390 Q400,398 405,390 L400,330" fill="none" stroke="#2a1f14" stroke-width="0.5"
-          opacity="0.4" />
-        <!-- Lips -->
-        <path d="M370,430 Q385,420 400,425 Q415,420 430,430" fill="none" stroke="#2a1f14" stroke-width="0.7"
-          opacity="0.55" />
-        <path d="M370,430 Q400,450 430,430" fill="none" stroke="#2a1f14" stroke-width="0.5" opacity="0.4" />
-        <!-- Decorative circles around -->
-        <circle cx="400" cy="350" r="300" fill="none" stroke="#2a1f14" stroke-width="0.3" opacity="0.12"
-          stroke-dasharray="4 8" />
-        <circle cx="400" cy="350" r="340" fill="none" stroke="#2a1f14" stroke-width="0.2" opacity="0.08"
-          stroke-dasharray="2 12" />
-        <!-- Botanical decoration top -->
-        <g opacity="0.45" stroke="#2a1f14" fill="none" stroke-width="0.6">
-          <path d="M400,120 Q380,80 360,60 M400,120 Q420,80 440,60" />
-          <path d="M400,120 Q390,70 370,40 M400,120 Q410,70 430,40" />
-        </g>
-
-      </svg>
+      <img class="hero__img" src="img/hero.jpg" alt="Volpurgiya">
     </div>
 
     <div class="hero__content">
@@ -192,53 +146,7 @@
     </div>
     <div class="about__grid">
       <div class="about__portrait" data-reveal>
-        <svg viewBox="0 0 500 650" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="portraitBg" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" stop-color="#f0e6d0" />
-              <stop offset="100%" stop-color="#e8dcc0" />
-            </linearGradient>
-            <clipPath id="portraitClip">
-              <rect width="500" height="650" rx="8" />
-            </clipPath>
-          </defs>
-          <g clip-path="url(#portraitClip)">
-            <rect width="500" height="650" fill="url(#portraitBg)" />
-            <!-- Abstract artistic portrait -->
-            <g stroke="#2a1f14" fill="none">
-              <!-- Hair flow -->
-              <path d="M180,180 Q160,120 200,80 Q250,50 300,80 Q340,100 320,160" stroke-width="0.8" opacity="0.5" />
-              <path d="M170,200 Q140,140 190,90 Q260,40 330,90 Q370,120 340,180" stroke-width="0.5" opacity="0.35" />
-              <!-- Face outline -->
-              <path
-                d="M250,160 C310,160 340,200 340,260 C340,310 320,350 300,370 C285,385 275,400 275,430 C275,460 260,480 250,480 C240,480 225,460 225,430 C225,400 215,385 200,370 C180,350 160,310 160,260 C160,200 190,160 250,160Z"
-                stroke-width="0.9" opacity="0.55" />
-              <!-- Eyes -->
-              <ellipse cx="220" cy="265" rx="22" ry="8" stroke-width="0.6" opacity="0.55" />
-              <ellipse cx="280" cy="265" rx="22" ry="8" stroke-width="0.6" opacity="0.55" />
-              <circle cx="220" cy="265" r="3" fill="#2a1f14" opacity="0.3" />
-              <circle cx="280" cy="265" r="3" fill="#2a1f14" opacity="0.3" />
-              <!-- Nose -->
-              <path d="M250,275 L247,315 Q250,320 253,315 L250,275" stroke-width="0.4" opacity="0.35" />
-              <!-- Mouth -->
-              <path d="M235,345 Q243,338 250,340 Q257,338 265,345" stroke-width="0.5" opacity="0.5" />
-              <path d="M235,345 Q250,358 265,345" stroke-width="0.4" opacity="0.35" />
-              <!-- Neck / shoulders hint -->
-              <path d="M225,480 L200,530 Q150,560 120,600" stroke-width="0.5" opacity="0.3" />
-              <path d="M275,480 L300,530 Q350,560 380,600" stroke-width="0.5" opacity="0.3" />
-              <!-- Tattoo on shoulder - small botanical -->
-              <g transform="translate(320,540)" opacity="0.25" stroke-width="0.5">
-                <path d="M0,0 Q-5,-15 -2,-25" />
-                <path d="M0,0 Q5,-15 2,-25" />
-                <path d="M0,-8 Q-10,-18 -15,-15" />
-                <path d="M0,-8 Q10,-18 15,-15" />
-                <circle cx="-2" cy="-28" r="3" />
-                <circle cx="2" cy="-28" r="3" />
-              </g>
-            </g>
-
-          </g>
-        </svg>
+        <img src="img/hero.jpg" alt="">
       </div>
       <div class="about__content">
         <h2 class="about__title" data-reveal>Привет, это<br><em>Вольпургия</em></h2>
@@ -295,194 +203,43 @@
       <!-- 1: Fern -->
       <div class="portfolio__item" data-cat="botanical" data-reveal>
         <div class="portfolio__page">
-          <svg class="portfolio__art" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="400" fill="#e8dcc0" />
-            <defs>
-              <linearGradient id="fernGrad" x1="50%" y1="0%" x2="50%" y2="100%">
-                <stop offset="0%" stop-color="#2a1f14" stop-opacity="0.8" />
-                <stop offset="100%" stop-color="#2a1f14" stop-opacity="0.3" />
-              </linearGradient>
-            </defs>
-            <g transform="translate(200,200)" stroke="url(#fernGrad)" fill="none" stroke-width="0.8">
-              <path d="M0,-155 C2,-100 -1,-50 0,0 C1,50 -1,100 0,145" stroke-width="1.4" />
-              <g opacity="0.85">
-                <path d="M0,-140 C-15,-132 -35,-125 -50,-110" />
-                <path d="M0,-120 C-18,-112 -42,-100 -60,-85" />
-                <path d="M0,-100 C-22,-88 -50,-75 -72,-55" />
-                <path d="M0,-80 C-25,-65 -55,-50 -80,-30" />
-                <path d="M0,-60 C-22,-45 -48,-30 -68,-10" />
-                <path d="M0,-40 C-18,-28 -38,-15 -50,5" />
-                <path d="M0,-20 C-12,-10 -25,0 -35,15" />
-              </g>
-              <g opacity="0.85">
-                <path d="M0,-140 C15,-132 35,-125 50,-110" />
-                <path d="M0,-120 C18,-112 42,-100 60,-85" />
-                <path d="M0,-100 C22,-88 50,-75 72,-55" />
-                <path d="M0,-80 C25,-65 55,-50 80,-30" />
-                <path d="M0,-60 C22,-45 48,-30 68,-10" />
-                <path d="M0,-40 C18,-28 38,-15 50,5" />
-                <path d="M0,-20 C12,-10 25,0 35,15" />
-              </g>
-              <g stroke-width="0.3" opacity="0.5">
-                <path d="M-50,-110 C-46,-118 -38,-120 -35,-112" />
-                <path d="M-60,-85 C-54,-92 -46,-92 -43,-84" />
-                <path d="M50,-110 C46,-118 38,-120 35,-112" />
-                <path d="M60,-85 C54,-92 46,-92 43,-84" />
-              </g>
-            </g>
-          </svg>
+          <img class="portfolio__art" src="img/works-1.jpg" alt="Работа 1">
           <span class="portfolio__folio">i</span>
           <span class="portfolio__caption">Pteridium</span>
         </div>
       </div>
 
       <!-- 2: Moon phases -->
-      <div class="portfolio__item" data-cat="minimal" data-reveal>
+      <div class="portfolio__item" data-cat="celestial" data-reveal>
         <div class="portfolio__page">
-          <svg class="portfolio__art" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="400" fill="#e8dcc0" />
-            <g transform="translate(200,200)" stroke="#2a1f14" fill="none">
-              <g opacity="0.85">
-                <circle cx="0" cy="-120" r="18" stroke-width="0.7" />
-                <circle cx="0" cy="-60" r="18" stroke-width="0.7" />
-                <path d="M0,-78 A18,18 0 0,1 0,-42 A10,18 0 0,0 0,-78" fill="#2a1f14" opacity="0.25" />
-                <circle cx="0" cy="0" r="18" stroke-width="0.7" />
-                <path d="M0,-18 L0,18 A18,18 0 0,1 0,-18" fill="#2a1f14" opacity="0.3" />
-                <circle cx="0" cy="60" r="18" stroke-width="0.7" />
-                <path d="M0,-18 A18,18 0 0,1 0,18 A10,18 0 0,0 0,-18" fill="#2a1f14" opacity="0.35" />
-                <circle cx="0" cy="120" r="18" stroke-width="0.7" fill="#2a1f14" opacity="0.2" />
-              </g>
-              <line x1="0" y1="-145" x2="0" y2="145" stroke-width="0.3" opacity="0.15" />
-              <circle cx="-40" cy="0" r="1" fill="#2a1f14" opacity="0.35" />
-              <circle cx="40" cy="0" r="1" fill="#2a1f14" opacity="0.35" />
-              <circle cx="-60" cy="-60" r="1" fill="#2a1f14" opacity="0.25" />
-              <circle cx="60" cy="-60" r="1" fill="#2a1f14" opacity="0.25" />
-              <circle cx="-60" cy="60" r="1" fill="#2a1f14" opacity="0.25" />
-              <circle cx="60" cy="60" r="1" fill="#2a1f14" opacity="0.25" />
-            </g>
-          </svg>
+          <img class="portfolio__art" src="img/works-2.jpg" alt="Работа 2">
           <span class="portfolio__folio">ii</span>
           <span class="portfolio__caption">Lunae Phases</span>
         </div>
       </div>
 
       <!-- 3: Ornamental mandala -->
-      <div class="portfolio__item" data-cat="ornament" data-reveal>
+      <div class="portfolio__item" data-cat="symbolic" data-reveal>
         <div class="portfolio__page">
-          <svg class="portfolio__art" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="400" fill="#e8dcc0" />
-            <g transform="translate(200,200)" stroke="#2a1f14" fill="none" opacity="0.85">
-              <circle r="20" stroke-width="0.7" />
-              <circle r="35" stroke-width="0.5" />
-              <circle r="55" stroke-width="0.6" />
-              <circle r="75" stroke-width="0.4" />
-              <circle r="95" stroke-width="0.5" />
-              <circle r="115" stroke-width="0.3" stroke-dasharray="3 5" />
-              <g stroke-width="0.6">
-                <path d="M0,-25 Q12,-45 0,-60 Q-12,-45 0,-25" />
-                <path d="M0,-25 Q12,-45 0,-60 Q-12,-45 0,-25" transform="rotate(30)" />
-                <path d="M0,-25 Q12,-45 0,-60 Q-12,-45 0,-25" transform="rotate(60)" />
-                <path d="M0,-25 Q12,-45 0,-60 Q-12,-45 0,-25" transform="rotate(90)" />
-                <path d="M0,-25 Q12,-45 0,-60 Q-12,-45 0,-25" transform="rotate(120)" />
-                <path d="M0,-25 Q12,-45 0,-60 Q-12,-45 0,-25" transform="rotate(150)" />
-                <path d="M0,-25 Q12,-45 0,-60 Q-12,-45 0,-25" transform="rotate(180)" />
-                <path d="M0,-25 Q12,-45 0,-60 Q-12,-45 0,-25" transform="rotate(210)" />
-                <path d="M0,-25 Q12,-45 0,-60 Q-12,-45 0,-25" transform="rotate(240)" />
-                <path d="M0,-25 Q12,-45 0,-60 Q-12,-45 0,-25" transform="rotate(270)" />
-                <path d="M0,-25 Q12,-45 0,-60 Q-12,-45 0,-25" transform="rotate(300)" />
-                <path d="M0,-25 Q12,-45 0,-60 Q-12,-45 0,-25" transform="rotate(330)" />
-              </g>
-              <g stroke-width="0.35" opacity="0.65">
-                <path d="M0,-80 Q8,-90 0,-100 Q-8,-90 0,-80" transform="rotate(15)" />
-                <path d="M0,-80 Q8,-90 0,-100 Q-8,-90 0,-80" transform="rotate(45)" />
-                <path d="M0,-80 Q8,-90 0,-100 Q-8,-90 0,-80" transform="rotate(75)" />
-                <path d="M0,-80 Q8,-90 0,-100 Q-8,-90 0,-80" transform="rotate(105)" />
-                <path d="M0,-80 Q8,-90 0,-100 Q-8,-90 0,-80" transform="rotate(135)" />
-                <path d="M0,-80 Q8,-90 0,-100 Q-8,-90 0,-80" transform="rotate(165)" />
-                <path d="M0,-80 Q8,-90 0,-100 Q-8,-90 0,-80" transform="rotate(195)" />
-                <path d="M0,-80 Q8,-90 0,-100 Q-8,-90 0,-80" transform="rotate(225)" />
-                <path d="M0,-80 Q8,-90 0,-100 Q-8,-90 0,-80" transform="rotate(255)" />
-                <path d="M0,-80 Q8,-90 0,-100 Q-8,-90 0,-80" transform="rotate(285)" />
-                <path d="M0,-80 Q8,-90 0,-100 Q-8,-90 0,-80" transform="rotate(315)" />
-                <path d="M0,-80 Q8,-90 0,-100 Q-8,-90 0,-80" transform="rotate(345)" />
-              </g>
-              <circle r="3" fill="#2a1f14" opacity="0.35" />
-            </g>
-          </svg>
+          <img class="portfolio__art" src="img/works-3.jpg" alt="Работа 3">
           <span class="portfolio__folio">iii</span>
           <span class="portfolio__caption">Mandala</span>
         </div>
       </div>
 
       <!-- 4: Snake -->
-      <div class="portfolio__item" data-cat="linework" data-reveal>
+      <div class="portfolio__item" data-cat="fauna" data-reveal>
         <div class="portfolio__page">
-          <svg class="portfolio__art" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="400" fill="#e8dcc0" />
-            <g stroke="#2a1f14" fill="none" opacity="0.85" transform="translate(-60,0) scale(0.85)">
-              <path
-                d="M80,350 C80,300 120,280 160,260 C200,240 220,210 200,180 C180,150 220,120 260,110 C300,100 340,120 360,150 C380,180 420,190 460,170 C500,150 530,110 570,90 C600,75 630,60 660,48"
-                stroke-width="1.4" />
-              <path
-                d="M90,345 C90,300 128,278 165,258 C205,238 225,208 205,178 C185,148 225,118 265,108 C305,98 345,118 365,148 C385,178 425,188 465,168 C505,148 535,108 575,88 C605,73 635,58 665,46"
-                stroke-width="0.35" opacity="0.3" />
-              <circle cx="668" cy="46" r="6" stroke-width="0.7" />
-              <circle cx="671" cy="43" r="1.5" fill="#2a1f14" opacity="0.5" />
-              <path d="M674,48 L685,46 M674,50 L685,52" stroke-width="0.6" />
-              <g stroke-width="0.35" opacity="0.3">
-                <path d="M110,320 Q120,310 130,320" />
-                <path d="M130,300 Q140,290 150,300" />
-                <path d="M160,278 Q170,268 180,278" />
-                <path d="M185,255 Q195,245 205,255" />
-                <path d="M195,225 Q205,215 215,225" />
-                <path d="M195,195 Q205,185 215,195" />
-                <path d="M210,165 Q220,155 230,165" />
-                <path d="M235,135 Q245,125 255,135" />
-                <path d="M265,115 Q275,105 285,115" />
-                <path d="M295,108 Q305,98 315,108" />
-                <path d="M325,118 Q335,108 345,118" />
-                <path d="M350,138 Q360,128 370,138" />
-                <path d="M370,165 Q380,155 390,165" />
-                <path d="M400,180 Q410,170 420,180" />
-                <path d="M430,175 Q440,165 450,175" />
-                <path d="M460,162 Q470,152 480,162" />
-                <path d="M490,145 Q500,135 510,145" />
-                <path d="M520,125 Q530,115 540,125" />
-                <path d="M555,105 Q565,95 575,105" />
-                <path d="M585,88 Q595,78 605,88" />
-                <path d="M615,72 Q625,62 635,72" />
-              </g>
-              <g opacity="0.18" stroke-width="0.45">
-                <path d="M350,350 Q340,300 360,260" />
-                <path d="M360,260 Q370,240 355,220" />
-                <path d="M355,220 Q345,200 360,180" />
-              </g>
-            </g>
-          </svg>
+          <img class="portfolio__art" src="img/works-4.jpg" alt="Работа 4">
           <span class="portfolio__folio">iv</span>
           <span class="portfolio__caption">Serpens</span>
         </div>
       </div>
 
       <!-- 5: Mountains -->
-      <div class="portfolio__item" data-cat="linework" data-reveal>
+      <div class="portfolio__item" data-cat="symbolic" data-reveal>
         <div class="portfolio__page">
-          <svg class="portfolio__art" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="400" fill="#e8dcc0" />
-            <g stroke="#2a1f14" fill="none" opacity="0.8">
-              <path d="M0,320 L60,220 L100,260 L170,140 L230,230 L300,120 L360,200 L400,160 L400,400 L0,400Z"
-                fill="#2a1f14" opacity="0.04" stroke-width="0.5" />
-              <path d="M0,360 L80,280 L130,310 L200,200 L260,280 L340,170 L400,250 L400,400 L0,400Z" fill="#2a1f14"
-                opacity="0.025" stroke-width="0.8" />
-              <circle cx="320" cy="90" r="30" stroke-width="0.6" opacity="0.35" />
-              <circle cx="320" cy="90" r="25" fill="#2a1f14" opacity="0.05" />
-              <circle cx="100" cy="60" r="1" fill="#2a1f14" opacity="0.5" />
-              <circle cx="180" cy="40" r="0.8" fill="#2a1f14" opacity="0.4" />
-              <circle cx="250" cy="70" r="1" fill="#2a1f14" opacity="0.45" />
-              <circle cx="50" cy="100" r="0.6" fill="#2a1f14" opacity="0.35" />
-              <circle cx="370" cy="50" r="0.8" fill="#2a1f14" opacity="0.4" />
-            </g>
-          </svg>
+          <img class="portfolio__art" src="img/works-5.jpg" alt="Работа 5">
           <span class="portfolio__folio">v</span>
           <span class="portfolio__caption">Montes</span>
         </div>
@@ -491,69 +248,27 @@
       <!-- 6: Wildflowers -->
       <div class="portfolio__item" data-cat="botanical" data-reveal>
         <div class="portfolio__page">
-          <svg class="portfolio__art" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="400" fill="#e8dcc0" />
-            <g stroke="#2a1f14" fill="none" opacity="0.85">
-              <path d="M200,380 Q195,300 185,220 Q180,180 190,140" stroke-width="0.8" />
-              <path d="M200,380 Q210,290 225,210 Q235,170 220,130" stroke-width="0.8" />
-              <path d="M200,380 Q200,310 200,250 Q200,200 200,160" stroke-width="0.8" />
-              <g transform="translate(190,135)">
-                <circle r="8" stroke-width="0.6" />
-                <path d="M0,-8 Q8,-18 0,-25 Q-8,-18 0,-8" stroke-width="0.5" />
-                <path d="M8,0 Q18,-8 25,0 Q18,8 8,0" stroke-width="0.5" />
-                <path d="M0,8 Q8,18 0,25 Q-8,18 0,8" stroke-width="0.5" />
-                <path d="M-8,0 Q-18,8 -25,0 Q-18,-8 -8,0" stroke-width="0.5" />
-                <circle r="3" fill="#2a1f14" opacity="0.18" />
-              </g>
-              <g transform="translate(220,125)">
-                <ellipse rx="5" ry="10" stroke-width="0.6" />
-                <path d="M0,-10 Q5,-5 0,0 Q-5,-5 0,-10" stroke-width="0.35" fill="#2a1f14" opacity="0.1" />
-              </g>
-              <g transform="translate(200,155)">
-                <circle r="5" stroke-width="0.5" />
-                <circle r="2" fill="#2a1f14" opacity="0.25" />
-                <path d="M0,-5 Q3,-10 0,-13 Q-3,-10 0,-5" stroke-width="0.35" />
-                <path d="M5,0 Q10,-3 13,0 Q10,3 5,0" stroke-width="0.35" />
-                <path d="M0,5 Q3,10 0,13 Q-3,10 0,5" stroke-width="0.35" />
-                <path d="M-5,0 Q-10,3 -13,0 Q-10,-3 -5,0" stroke-width="0.35" />
-              </g>
-              <path d="M185,260 Q165,240 170,210 Q185,225 185,260" stroke-width="0.6" fill="#2a1f14" opacity="0.04" />
-              <path d="M215,270 Q235,250 230,220 Q215,235 215,270" stroke-width="0.6" fill="#2a1f14" opacity="0.04" />
-              <path d="M185,255 Q175,240 173,220" stroke-width="0.25" opacity="0.25" />
-              <path d="M215,265 Q225,250 227,225" stroke-width="0.25" opacity="0.25" />
-            </g>
-          </svg>
+          <img class="portfolio__art" src="img/works-6.jpg" alt="Работа 6">
           <span class="portfolio__folio">vi</span>
           <span class="portfolio__caption">Flores Silvestres</span>
         </div>
       </div>
 
       <!-- 7: Geometric eye -->
-      <div class="portfolio__item" data-cat="ornament" data-reveal>
+      <div class="portfolio__item" data-cat="symbolic" data-reveal>
         <div class="portfolio__page">
-          <svg class="portfolio__art" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
-            <rect width="400" height="400" fill="#e8dcc0" />
-            <g transform="translate(200,200)" stroke="#2a1f14" fill="none" opacity="0.7">
-              <polygon points="0,-100 87,50 -87,50" stroke-width="0.7" />
-              <polygon points="0,-60 52,30 -52,30" stroke-width="0.5" />
-              <path d="M-50,0 Q0,-35 50,0 Q0,35 -50,0" stroke-width="0.9" />
-              <circle r="15" stroke-width="0.6" />
-              <circle r="6" fill="#2a1f14" opacity="0.25" />
-              <circle r="2" fill="#2a1f14" opacity="0.35" />
-              <g stroke-width="0.25" opacity="0.35">
-                <line x1="0" y1="-35" x2="0" y2="-60" />
-                <line x1="30" y1="-20" x2="50" y2="-35" />
-                <line x1="-30" y1="-20" x2="-50" y2="-35" />
-                <line x1="35" y1="10" x2="55" y2="18" />
-                <line x1="-35" y1="10" x2="-55" y2="18" />
-              </g>
-              <circle cx="0" cy="-100" r="2.5" fill="#2a1f14" opacity="0.3" />
-              <circle cx="87" cy="50" r="2.5" fill="#2a1f14" opacity="0.3" />
-              <circle cx="-87" cy="50" r="2.5" fill="#2a1f14" opacity="0.3" />
-            </g>
-          </svg>
+          <img class="portfolio__art" src="img/works-7.jpg" alt="Работа 7">
           <span class="portfolio__folio">vii</span>
           <span class="portfolio__caption">Oculus</span>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="portfolio__item" data-cat="botanical" data-reveal>
+        <div class="portfolio__page">
+          <img class="portfolio__art" src="img/works-8.jpg" alt="Работа 8">
+          <span class="portfolio__folio">viii</span>
+          <span class="portfolio__caption">Herbarium</span>
         </div>
       </div>
     </div>

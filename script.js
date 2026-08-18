@@ -219,30 +219,35 @@ window.addEventListener('load', () => {
   }
 });
 
-// ====== GOLD PARTICLES ======
-(function initGoldParticles() {
-  const container = document.getElementById('goldParticles');
+// ====== BG DECOR ======
+(function initBgDecor() {
+  const container = document.getElementById('bgDecor');
   if (!container) return;
-  const count = 18;
-  for (let i = 0; i < count; i++) {
-    const p = document.createElement('div');
-    p.className = 'gold-particle';
-    const size = 1.5 + Math.random() * 3;
-    const left = Math.random() * 100;
-    const duration = 12 + Math.random() * 14;
-    const delay = Math.random() * duration;
-    const drift = (Math.random() - 0.5) * 80;
-    const opacity = 0.15 + Math.random() * 0.25;
-    p.style.cssText = `
-      width: ${size}px;
-      height: ${size}px;
+  const total = 44;
+  const count = 20;
+  const used = new Set();
+  while (used.size < count) used.add(Math.floor(Math.random() * total) + 1);
+  used.forEach(n => {
+    const img = document.createElement('img');
+    img.className = 'bg-decor__img';
+    img.src = 'img/bg/' + n + '.png';
+    img.alt = '';
+    const size = 4 + Math.random() * 6;
+    const top = Math.random() * 90;
+    const left = Math.random() * 90;
+    const dur = 16 + Math.random() * 14;
+    const dx = (Math.random() - 0.5) * 80;
+    const dy = (Math.random() - 0.5) * 60;
+    const rot = (Math.random() - 0.5) * 8;
+    img.style.cssText = `
+      width: ${size}vw;
+      top: ${top}%;
       left: ${left}%;
-      bottom: -20px;
-      animation-duration: ${duration}s;
-      animation-delay: -${delay}s;
-      --p-drift: ${drift}px;
-      --p-opacity: ${opacity};
+      animation-duration: ${dur}s;
+      --dx: ${dx}px;
+      --dy: ${dy}px;
+      --rot: ${rot}deg;
     `;
-    container.appendChild(p);
-  }
+    container.appendChild(img);
+  });
 })();
