@@ -549,7 +549,7 @@ button {
   max-width: 550px;
   opacity: 0.7;
   overflow: hidden;
-  z-index: 5;
+  z-index: 1;
   animation: heroFloat 16s ease-in-out infinite alternate;
 }
 
