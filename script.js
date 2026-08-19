@@ -215,6 +215,6 @@ mouseParallax();
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
   if (preloader) {
-    setTimeout(() => preloader.classList.add('done'), 1000);
+    setTimeout(() => preloader.classList.add('done'), 1200);
   }
 });

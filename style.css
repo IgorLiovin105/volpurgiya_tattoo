@@ -98,8 +98,14 @@ body::before {
   background-size: 20px 20px;
 }
 
-a, button, .btn, .filter-btn, .portfolio__item {
-  cursor: url('img/cursor.png') 0 0, pointer;
+a,
+button,
+.btn,
+.filter-btn,
+.portfolio__item {
+  cursor:
+    url("img/cursor.png") 0 0,
+    pointer;
 }
 
 a {
@@ -165,22 +171,74 @@ button {
   top: 15%;
   left: 10%;
 }
-.section-decor--about-1 {
-  top: 5%;
+@media (max-width: 768px) {
+  .section-decor--hero-1 {
+    width: 120px;
+    bottom: 15%;
+    left: 0%;
+  }
+  .section-decor--hero-2 {
+    width: 120px;
+    top: 15%;
+    left: 10%;
+  }
+}
+.section-decor--about-1-first {
+  top: 10%;
   right: 10%;
+}
+.section-decor--about-1-last {
+  display: none;
 }
 .section-decor--about-2 {
   bottom: 0%;
   right: -5%;
 }
 @media (max-width: 768px) {
-  .section-decor--about-1 {
-    top: 60%;
-    right: 10%;
+  .section-decor--about-1-first {
+    display: none;
+  }
+  .section-decor--about-1-last {
+    width: 120px;
+    display: block;
+    top: -8%;
+    right: 0%;
   }
   .section-decor--about-2 {
     bottom: 0%;
     right: 5%;
+  }
+}
+@media (max-width: 585px) {
+  .section-decor--about-1-last {
+    width: 100px;
+    display: block;
+    top: 25%;
+    right: 0%;
+  }
+}
+@media (max-width: 486px) {
+  .section-decor--about-1-last {
+    width: 100px;
+    display: block;
+    top: 35%;
+    right: 0%;
+  }
+}
+@media (max-width: 355px) {
+  .section-decor--about-1-last {
+    width: 100px;
+    display: block;
+    top: 35%;
+    right: -5%;
+  }
+}
+@media (max-width: 330px) {
+  .section-decor--about-1-last {
+    width: 100px;
+    display: block;
+    top: 20%;
+    right: -7%;
   }
 }
 .section-decor--portfolio-1 {
@@ -199,8 +257,9 @@ button {
 }
 @media (max-width: 768px) {
   .section-decor--portfolio-1 {
+    width: 100px;
     top: 2%;
-    right: 20%;
+    right: 0%;
   }
   .section-decor--portfolio-2 {
     bottom: -1%;
@@ -216,6 +275,16 @@ button {
   right: 5%;
   rotate: 30deg;
 }
+@media (max-width: 768px) {
+  .section-decor--services-1 {
+    width: 120px;
+    right: 10%;
+  }
+  .section-decor--services-2 {
+    width: 120px;
+    right: 10%;
+  }
+}
 .section-decor--process-1 {
   top: 10%;
   right: 30%;
@@ -226,12 +295,14 @@ button {
 }
 @media (max-width: 768px) {
   .section-decor--process-1 {
-    top: 20%;
-    right: 10%;
+    width: 150px;
+    top: 10%;
+    right: 5%;
   }
   .section-decor--process-2 {
-    bottom: -5%;
-    right: 10%;
+    width: 150px;
+    bottom: -2%;
+    right: 0%;
   }
 }
 .section-decor--booking-1 {
@@ -1587,132 +1658,39 @@ button {
 }
 
 .preloader__inner {
+  position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 1.8rem;
+  justify-content: center;
+  height: 80px;
 }
 
-.preloader__svg {
-  width: 180px;
-  height: 180px;
+.preloader__jump {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  animation: preloaderDesktopJump 1.2s linear forwards;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
 }
 
-/* Mandala rings draw in */
-.preloader__mandala {
-  animation: preloaderDraw 2.5s var(--ease) forwards;
-}
-
-.preloader__mandala--1 {
-  animation-delay: 0.1s;
-}
-.preloader__mandala--2 {
-  animation-delay: 0.4s;
-}
-.preloader__mandala--3 {
-  animation-delay: 0.7s;
-}
-
-/* Petals draw in with stagger */
-.preloader__petal {
-  animation: preloaderDraw 1.5s var(--ease) forwards;
-}
-
-.preloader__petal:nth-child(1) {
-  animation-delay: 0.3s;
-}
-.preloader__petal:nth-child(2) {
-  animation-delay: 0.45s;
-}
-.preloader__petal:nth-child(3) {
-  animation-delay: 0.6s;
-}
-.preloader__petal:nth-child(4) {
-  animation-delay: 0.75s;
-}
-.preloader__petal:nth-child(5) {
-  animation-delay: 0.9s;
-}
-.preloader__petal:nth-child(6) {
-  animation-delay: 1.05s;
-}
-.preloader__petal:nth-child(7) {
-  animation-delay: 1.2s;
-}
-.preloader__petal:nth-child(8) {
-  animation-delay: 1.35s;
-}
-
-/* Center dot */
-.preloader__center {
-  animation: preloaderDotIn 0.6s var(--ease) 1.5s forwards;
-}
-
-/* Ink drops */
-.preloader__ink {
-  animation: preloaderInkDrop 0.8s var(--ease) forwards;
-}
-
-.preloader__ink--1 {
-  animation-delay: 0.2s;
-}
-.preloader__ink--2 {
-  animation-delay: 0.5s;
-}
-.preloader__ink--3 {
-  animation-delay: 0.8s;
-}
-.preloader__ink--4 {
-  animation-delay: 1.1s;
-}
-.preloader__ink--5 {
-  animation-delay: 1.3s;
-}
-.preloader__ink--6 {
-  animation-delay: 1.5s;
-}
-
-/* Needle bounces up and down */
-.preloader__needle-group {
-  animation: preloaderNeedle 0.15s ease-in-out infinite alternate;
-}
-
-@keyframes preloaderNeedle {
-  0% {
-    transform: translateY(0);
-  }
-  100% {
-    transform: translateY(3px);
-  }
-}
-
-@keyframes preloaderDraw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes preloaderDotIn {
-  from {
-    opacity: 0;
-    r: 0;
-  }
-  to {
-    opacity: 0.8;
-    r: 3;
-  }
-}
-
-@keyframes preloaderInkDrop {
+@keyframes preloaderDesktopJump {
   0% {
     opacity: 0;
-    r: 0;
+    transform: translateX(200px);
   }
-  60% {
-    opacity: 0.6;
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
   }
   100% {
-    opacity: 0.3;
+    opacity: 0;
+    transform: translateX(-200px);
   }
 }
 
@@ -1723,21 +1701,50 @@ button {
   letter-spacing: 0.3em;
   color: var(--text);
   text-transform: uppercase;
-  opacity: 0;
-  animation: preloaderFadeText 1s var(--ease) 0.8s forwards;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.preloader__sub {
-  font-family: var(--font-body);
-  font-size: 0.65rem;
-  letter-spacing: 0.15em;
-  color: var(--text-muted);
-  text-transform: lowercase;
+.preloader__text span {
   opacity: 0;
-  animation: preloaderFadeText 1s var(--ease) 1.2s forwards;
+  animation: preloaderLetterIn 0.1s ease forwards;
 }
 
-@keyframes preloaderFadeText {
+.preloader__text span:nth-child(1) {
+  animation-delay: 0.97s;
+}
+.preloader__text span:nth-child(2) {
+  animation-delay: 0.9s;
+}
+.preloader__text span:nth-child(3) {
+  animation-delay: 0.83s;
+}
+.preloader__text span:nth-child(4) {
+  animation-delay: 0.76s;
+}
+.preloader__text span:nth-child(5) {
+  animation-delay: 0.69s;
+}
+.preloader__text span:nth-child(6) {
+  animation-delay: 0.62s;
+}
+.preloader__text span:nth-child(7) {
+  animation-delay: 0.55s;
+}
+.preloader__text span:nth-child(8) {
+  animation-delay: 0.48s;
+}
+.preloader__text span:nth-child(9) {
+  animation-delay: 0.41s;
+}
+.preloader__text span:nth-child(10) {
+  animation-delay: 0.4s;
+}
+
+@keyframes preloaderLetterIn {
   to {
     opacity: 1;
   }
