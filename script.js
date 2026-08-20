@@ -211,6 +211,25 @@ function mouseParallax() {
 }
 mouseParallax();
 
+// ====== FILE UPLOAD ======
+const fileUpload = document.getElementById('fileUpload');
+const filePreview = document.getElementById('filePreview');
+if (fileUpload && filePreview) {
+  fileUpload.addEventListener('change', () => {
+    filePreview.innerHTML = '';
+    [...fileUpload.files].forEach(file => {
+      if (!file.type.startsWith('image/')) return;
+      const reader = new FileReader();
+      reader.onload = e => {
+        const img = document.createElement('img');
+        img.src = e.target.result;
+        filePreview.appendChild(img);
+      };
+      reader.readAsDataURL(file);
+    });
+  });
+}
+
 // ====== PRELOADER ======
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
